@@ -64,7 +64,7 @@ section.home div.home__content a{
 }
 section.home div.home__content a:hover{
     letter-spacing: 10px;
-    color: red;
+    color: rgb(211, 65, 65);
 }
 
 /* Sobre */
@@ -82,22 +82,28 @@ section h1.sobre__h1{
 section.sobre div.sobre__head{
     display: flex;
     justify-content: space-evenly;
+    /* border-bottom: 1px solid white; */
 }
 section.sobre div.sobre__head div.sobre__head__item{
     width: 30%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.sobre div.sobre__head div.sobre__head__item:hover{
     border-bottom: 1px solid white;
-    cursor: pointer;
-    
 }
 section.sobre div.sobre__head div.sobre__head__item p{
     font-size: 1.2em;
-    padding: 1vw 0;
+    padding: 2vw 0 .5vw 0;
 }
 section.sobre div.sobre__head div.sobre__head__item img{
     width: 4em;
     background: white;
     border-radius: 5px;
+}
+section.sobre div.sobre__body__item{
+    display: none;
 }
 section.sobre div.sobre__body{
     padding: 4vw 6vw 0 6vw;
@@ -106,9 +112,9 @@ section.sobre div.sobre__body{
 section.sobre div.sobre__body p{
     text-indent: 2em;
 }
-.sobre__invisible{
-    display: none;
-}
 .sobre__atual{
     color: rgb(94, 86, 86);
+}
+.sobre__content__atual{
+    display: block !important;
 }
