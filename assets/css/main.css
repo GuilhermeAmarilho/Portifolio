@@ -125,68 +125,55 @@ section.sobre div.sobre__body p{
 section.projetos{
     display: flex;
     flex-direction: column;   
-    /* height: 100vh; */
     padding: 10vw;
     background: linear-gradient(135deg, rgb(33, 13, 44) 10%, rgb(0, 0, 0) 100%);
     border-top: 1px solid white;
     align-items: center;
 }
-section.projetos>h1{
-    font-size: 2.5em;
-    margin-bottom: 2vw;
+section.projetos > h1{
+    margin-bottom: 1vw;
+    font-size: 2em;
 }
-.projetos__novos__content {
-    width: 60vw;
-    padding: 2vw 0 30vw 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.projetos__novos h1{
+div.projetos__carousel{
+    position: relative;
+    width: 30%;
+    margin-top: 5vh;
     text-align: center;
 }
-div.projetos__projeto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    opacity: 0;
-    animation: display 10s infinite; 
+.projetos__carousel h1{
+    font-size: .8em;
+    font-weight: 700;
 }
-div.projetos__projeto p{
-    font-size: 1.2em;
+.projetos__carousel img{
+    width: 15vw;
+    margin-bottom: 1vw;
+}
+.projetos__carousel__item{
+    display: none;
+}
+.projetos__carousel__item h1{
+    font-size: 1.3em;
     font-weight: 600;
+    margin-bottom: 1vw;
 }
-div.projetos__projeto img{
-    width: 20vw;
-    padding: 1vw 0 2vw 0;
+.projetos__carousel__button{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25%;
+    margin: 2vw 10px;
+    cursor: pointer;
 }
-div.projetos__projeto a{
-    font-size: 1.1em;
-    border-bottom: 1px solid white;
+.projetos__carousel__button--selected{
+    background: rgba(255, 255, 255, 1);
 }
-@keyframes display {
-    0% {
-        transform: translateX(40vw);
-        opacity: 0;
-    }
-    10% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    20% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    30% {
-        transform: translateX(-20vw);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(-40vw);
-        opacity: 0;
-    }
+.projetos__carousel__item--selected{
+    display: block;
 }
-.projetos__projeto:nth-child(2) {animation-delay: 2s;}
-/* .projetos__projeto:nth-child(3) {animation-delay: 4s;} */
-/* .projetos__projeto:nth-child(4) {animation-delay: 6s;} */
+.projetos__carousel .projetos__carousel__anchors a{
+    border: 1px solid white;
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;   
+    font-weight: 500;
+}
