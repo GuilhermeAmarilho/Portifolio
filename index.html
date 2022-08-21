@@ -1,146 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/icon/icone.ico"/>
-    <script src="assets/js/scrollreveal.js"></script>
-    <title>Portfólio | Gulherme Amarilho</title>
-    <link rel="stylesheet" href="assets/css/presets.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ===== CSS Files ===== -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skins/color-1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- ====== Style Switcher ====== -->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+  <link rel="stylesheet" href="css/style-switcher.css">
+  <link rel="shortcut icon" href="images/icone.ico" type="image/x-icon">
+  <title>Portfólio | Gulherme Amarilho</title>
 </head>
-<body onload="apagaNome(fName);"> 
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="assets/img/logo.png" alt="" class="nav__logo-img">
-            </a>
-            <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link nav__active">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#sobre" class="nav__link">Sobre</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#projetos" class="nav__link">Projetos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#sec3" class="nav__link">Habilidades</a>
-                    </li>
-                </ul>
+<body>
+  <!-- ===== Main Container Start ===== -->
+  <div class="main-container">
+    <!-- ===== Aside Start ===== -->
+    <div class="aside">
+      <div class="logo">
+        <a href="#"><span>Dev</span>Kong</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i> Sobre</a></li>
+        <li><a href="#services"><i class="fa fa-list"></i>Habilidádes</a></li>
+        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portifólio</a></li>
+        <li><a href="#contact"><i class="fa fa-comments"></i>Contato</a></li>
+      </ul>
+    </div>
+    <!-- ===== Aside End ===== -->
+
+    <!-- ===== Main Content Start ===== -->
+    <div class="main-content">
+
+      <!-- ===== Home Section Start ===== -->
+      <section class="home active section" id="home"> 
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">Olá, meu nome é <span class="name">Guilherme Amarilho</span></h3>
+              <h3 class="my-profession">Eu sou um <span class="typing">Desenvolvedor web</span></h3>
+              <p>Eu sou um Desenvolvedor Front-end com 6 anos de experiência teórica, minha especialidade é criar design de sites, encartes, layers, aplicações mobile entre outras coisas...</p>
+              <a href="documents/Curriculum Guilherme.pdf" target="_blank" class="btn">Veja meu Curriculum</a>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section class="home" id="home">
-            <div class="home__img">
-                <img src="assets/img/head.png" alt="Desenho">
-            </div>  
-            <div class="home__content">
-                <p class="descricao">
-                    Olá, me chamo 
-                    <br/>
-                    <span style="display: inline" class="span__nome">Guilherme Amarilho.</span>
-                    <br/>
-                    <p class="type">
-                        Desenvolvedor Full-Stack
-                    </p>
-                </p>
-                <br/>
-                <a href="https://github.com/guilhermeamarilho" target="_blank">
-                    github
-                </a>
+            <div class="home-img padd-15">
+              <img src="images/minhaFoto.jpg" alt="my photo">
             </div>
-        </section>
-        <section class="sobre" id="sobre">
-            <h1 class="sobre__h1">Minha História</h1>
-            <div class="sobre__head">
-                <div class="sobre__item__1 sobre__head__item sobre__atual">
-                    <img src="assets/img/sobre_mim.png" class="sobre__item__1" alt="pessoa c/ computador">
-                    <p class="sobre__item__1">Sobre Mim</p>
-                </div>
-                <div class="sobre__item__2 sobre__head__item">
-                    <img src="assets/img/ifrs.png" class="sobre__item__2" alt="Instituto Federal do Rio Grande do Sul">
-                    <P class="sobre__item__2">Ensino Técnico</P>
-                </div>
-                <div class="sobre__item__3 sobre__head__item">
-                    <img src="assets/img/ifc.png" class="sobre__item__3" alt="Instituto Federal Catarinense">
-                    <P class="sobre__item__3">Ensino Superior</P>
-                </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Home Section End ===== -->
+
+      <!-- ===== About Section Start ===== -->
+      <section class="about section" id="about"> 
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Sobre mim</h2>
             </div>
-            <div class="sobre__body">
-                <div class="sobre__body__item sobre__item__1 sobre__content__atual">
-                    <p>
-                        Olá, me chamo Guilherme P. do Amarilho, atualmente estou com 21 anos, e sou um intusiasta da programação, em especial, os assuntos referentes a Aprendizado de máquinas, e Experiência do Usuário com o site/APP
-                    </p>
-                    <p>
-                        Atualmente possuo formação tecnica em Informática para Internet, e estou cursando graduação em Ciências da Computação.
-                    </p>
-                    <p>
-                        Estou no meio do desenvolvimento web/app desde 2015, embora não possua nenhuma experiência de trabalho na área, estou sempre tentando aperfeiçoar meus conhecimentos técnicos.
-                    </p>
-                    <p>
-                        Busco sempre ter ao menos um conhecimento raso sobre tecnologias em alta, para caso necessário, ter um norte sobre o que aprender.  
-                    </p>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>Eu sou o Guilherme Amarilho, e sou <span>Web Developer</span></h3>
+                  <p>Sou um Web Developer Junior com 6 anos de expêriencia teórica, iniciando meu ensino técnico no ano de 2015, e minha graduação em 2021.<br>
+                  Atualmente rezido na em Videira - SC, onde curso o 4º Semestre de Ciências da Computação. <br>
+                  Busco por uma oportunidade de aprimorar meus conhecimentos, ampliando minhas capacidades de forma prática, me colocando a disposição de suprir as necessidades da empresa.</p>
                 </div>
-                <div class="sobre__body__item sobre__item__2">
-                    <p>
-                        Durante os anos de 2015 a 2019 cursei o ensino médio-técnico no Instituto Federal de Ciências e Técnologias do Rio Grande do Sul - Campus videira, onde frequentei o curso de Informática para a Internet.
-                    </p>
-                    <p>
-                        Onde neste, eu aprendi a desenvolver sites para internet, seguindo as especificações e paradigmas da lógica de programação e das linguagens de programação. 
-                    </p>
-                    <p>
-                        Também, foi-me ensinado a utilizar ferramentas de desenvolvimento de sistemas, para criar soluções que auxiliam o processo de criação de interfaces e aplicativos, Desenvolve e realiza a manutenção de sites e portais na internet e na intranet.
-                    </p>
-                </div>
-                <div class="sobre__body__item sobre__item__3">
-                    <p>
-                        Atualmente estou realizando minha graduação no Instituto Federal Catarinense, Campus Videira. Este se deu iniciou em 2020 e a pretenção é conclui-lo em 2024.
-                    </p>
-                    <p>
-                        Na graduação estou aprendendo a resolver problemas, com a construção de modelos computacionais baseados no desenvolvimento científico e tecnológico da computação.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="projetos" id="projetos">
-            <h1>Projetos Recentes</h1>
-            <div class="projetos__carousel">
-                <div class="projetos__carousel__item">
-                    <h1>Projeto 1</h1>
-                    <img src="assets/img/projetos/projetos1-img.png" alt="Projeto 1">
-                    <div class="projetos__carousel__anchors">
-                        <a href="">Repositório</a>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Nascimento: <span>27 fev 2001</span></p>
                     </div>
-                </div>
-                <div class="projetos__carousel__item">
-                    <h1>Projeto 2</h1>
-                    <img src="assets/img/projetos/projetos1-img.png" alt="Projeto 1">
-                    <div class="projetos__carousel__anchors">
-                        <a href="">Repositório</a>
+                    <div class="info-item padd-15">
+                      <p>Idade: <span>21</span></p>
                     </div>
-                </div>
-                <div class="projetos__carousel__item">
-                    <h1>Projeto 3</h1>
-                    <img src="assets/img/projetos/projetos1-img.png" alt="Projeto 3">
-                    <div class="projetos__carousel__anchors">
-                        <a href="">Repositório</a>
+                    <div class="info-item padd-15">
+                      <p>Website: <span>www.devkong.co</span></p>
                     </div>
+                    <div class="info-item padd-15">
+                      <p>Email: <span>guiamarilho1@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Formação: <span>Superior Incompleto</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Telefone: <span>+55 53 9 9701 3573</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Residência: <span>Videira - SC</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>FreeLance: <span>Disponivel</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="#contact" data-section-index="1" class="btn hire-me">Entre em contato</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>JS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>PHP</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 65%;"></div>
+                        <div class="skill-percent">65%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>HTML</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>CSS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 80%;"></div>
+                        <div class="skill-percent">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Escolaridade</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2021 - ~2024
+                          </h3>
+                          <h4 class="timeline-title">Graduação em Ciências da Computação</h4>
+                          <p class="timeline-text">Atualmente estou cursando ciências da computação na Instituição Federal Catarinense - Campus Videira. Onde já aprendi cadeiras mais simples como WebDesign e Linguagens de programação, e atualmente estou tendo cadeiras mais complexas, como estrutura de dados, arquitetura de computadores e Sistemas operacionais</p>
+                        </div>     
+                        <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2015 - 2019
+                          </h3>
+                          <h4 class="timeline-title">Técnico em Informática Para a Internet</h4>
+                          <p class="timeline-text">Durante os anos de 2015 a 2019, cursei o ensino médio/técnico no Instituto Federal Do Rio Grande do Sul - Campus Rio Grande. Onde aprendi a base da programação, como orientação a objetos, padrões de projetos, Front-End end com javascript, Jquery e frameworks visuais, e backend com PHP (com Laravel e CodeIgniter) e com Python (juntamente ao Flask).</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2022 - 2022
+                          </h3>
+                          <h4 class="timeline-title">Sem experiência</h4>
+                          <p class="timeline-text">Aqui entra minha dificuldade, até este momento não consegui nenhuma forma de provar meus conhecimentos teóricos. Por isso, caso você seja um recrutador, peço que me dê uma chance, não irá se arrepender.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-    </main>
-    <script src="assets/js/scroll.js"></script>
-    <script src="assets/js/letreiroNome.js"></script>
-    <script src="assets/js/escolheSobre.js"></script>
-    <script src="assets/js/carrosel.js"></script>
-    <footer>
-        <p></p>
-    </footer>
+          </div>
+        </div>
+      </section>
+      <!-- ===== About Section End ===== -->
+
+      <!-- ===== Services Section Start ===== -->
+      <section class="service section" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Serviços</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ===== Service item Start ====== -->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>Aplicativos Mobile</h4>
+                <p>Criação de aplicativos para Andoid/IOS com a utilização de Flutter, React Native ou PWA, podendo este ser jogos para web ou sistemas empresariais.</p>
+              </div>
+            </div>
+            <!-- ===== Service item End ====== -->
+             <!-- ===== Service item Start ====== -->
+             <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-laptop-code"></i>
+                </div>
+                <h4>Desenvolvedor Front-End</h4>
+                <p>Criação de sistemas single e multi pages, que vão desde a estrutura montada com o cliente utilizando scratch, até a versão final com html/css e frameworks.</p>
+              </div>
+            </div>
+            <!-- ===== Service item End ====== -->
+             <!-- ===== Service item Start ====== -->
+             <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-palette"></i>
+                </div>
+                <h4>Design gráfico</h4>
+                <p>Criação de páginas em redes sociais e/ou propagandas comerciais para a mesma, indo desde encartes de supermercados até clinicas de fisioterapia.</p>
+              </div>
+            </div>
+            <!-- ===== Service item End ====== -->
+             <!-- ===== Service item Start ====== -->
+             <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-code"></i>
+                </div>
+                <h4>Desenvolvedor BackEnd</h4>
+                <p>Embora não possua experiência nesta área, possuo conhecimento teórico em backend feito em php, python e java. Principalmente utilizando o padrão MVC.</p>
+              </div>
+            </div>
+            <!-- ===== Service item End ====== -->
+             <!-- ===== Service item Start ====== -->
+             <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa  fa-graduation-cap"></i>
+                </div>
+                <h4>Em aprendizado</h4>
+                <p>Futuramente, terei novas skills para preencher este cartão.</p>
+              </div>
+            </div>
+            <!-- ===== Service item End ====== -->
+             <!-- ===== Service item Start ====== -->
+             <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa  fa-graduation-cap"></i>
+                </div>
+                <h4>Em aprendizado</h4>
+                <p>Futuramente, terei novas skills para preencher este cartão.</p>
+              </div>
+            </div>
+            <!-- ===== Service item End ====== -->
+          </div>
+        </div>
+      </section>
+      <!-- ===== Services Section End ===== -->
+
+      <!-- ===== Portfolio Section Start ===== -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portifólio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>Meus ultimos projetos:</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ====== portfolio item start ====== -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-1.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-6.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- ====== portfolio item End ====== -->
+          </div>
+        </div>
+      </section>
+      <!-- ===== Portfolio Section End ===== -->
+
+      <!-- ===== Contact Section Start ===== -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Entre em contato</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">Ficou com alguma dúvida?</h3>
+          <h4 class="contact-sub-title padd-15">ESTOU A SEU DISPOR</h4>
+          <div class="row">
+            <!-- ===== Contact info item start ====== -->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Me ligue</h4>
+              <p>+55 53 99701-3573</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+             <!-- ===== Contact info item start ====== -->
+             <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4>Escritório</h4>
+              <p>Videira - SC</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+             <!-- ===== Contact info item start ====== -->
+             <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>guiamarilho1@gmail.com</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+             <!-- ===== Contact info item start ====== -->
+             <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>Meu Site</h4>
+              <p>www.devkong.co</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+          </div>
+          <h3 class="contact-title padd-15">ME EMVIE UM EMAIL</h3>
+          <h4 class="contact-sub-title padd-15">ESTOU SEMPRE ATENTO AS MENSAGENS!</h4>
+          <!-- ====== Contact Form ====== -->
+          <div class="row">
+            <div class="contact-form padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nome">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Título">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea name="" class="form-control" id=""  placeholder="Mensagem"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button type="submit" class="btn">Entrar em contato</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Contact Section End ===== -->
+
+    </div>
+    <!-- ===== Main Content End ===== -->
+  </div>
+  <!-- ===== Main Container End ===== -->
+  <!-- ===== Style Switcher Start ===== -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas "></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- ===== Style Switcher End ===== -->
+  <!-- ===== JS Files ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
 </body>
 </html>
